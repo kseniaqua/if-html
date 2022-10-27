@@ -1,58 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Russo+One&display=swap");
+@import url(./fonts.css);
 
 * {
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.17;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
-    background-color: #ffffff;
-    max-width: 1440px;
-    height: 570px;
+  background-color: #ffffff;
+  max-width: 1440px;
+  height: 570px;
 }
 
 .offer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 189px;
-    padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 189px;
+  padding-top: 120px;
 }
 
 .offer-title {
-    font-weight: 500;
-    font-size: 40px;
-    height: 47px;
-    margin: 0 auto;
-    width: 306px;
+  font-weight: 500;
+  font-size: 40px;
+  height: 47px;
+  margin: 0 auto;
+  width: 306px;
 }
 
 .offer-line {
-    height: 4px;
-    width: 100px;
-    margin: 18px auto 0;
-    background-color: #f5bd41;
+  height: 4px;
+  width: 100px;
+  margin: 18px auto 0;
+  background-color: #f5bd41;
 }
 
 .advantages {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    height: 254px;
-    width: 1120px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 254px;
+  width: 1232px;
 }
 
 .advantages-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 84px;
+  width: 296px;
 }
 
 .advantages-title {
-    font-weight: 400;
-    font-size: 24px;
-    height: 28px;
-    margin-bottom: 0;
+  font-size: 24px;
+  height: 28px;
+  margin-bottom: 0;
+}
+
+.support-img {
+  width: 75px;
+  height: 92px;
+}
+
+.messenger-img {
+  width: 84px;
+  height: 84px;
+}
+
+.book-online-img {
+  width: 100px;
+  height: 67px;
+}
+
+.reviews-img {
+  width: 92px;
+  height: 84px;
+}
+
+.footer {
+  background-color: #10367c;
+  max-width: 1440px;
+  height: 625px;
+  padding: 120px 0 120px 104px;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  width: 1248px;
+  height: 305px;
+  margin-bottom: 64px;
+}
+
+.footer-card {
+  width: 416px;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.footer-header {
+  font-weight: 500;
+}
+
+.all-rights-reserved {
+  font-size: 14px;
+  color: #ffffff;
 }
