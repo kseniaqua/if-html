@@ -8,6 +8,161 @@
   margin: 0;
 }
 
+.main {
+  background-image: url("../images/castelmezzano.png");
+  min-height: 100vh;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  padding: 51px 0 120px 104px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1232px;
+  height: 46px;
+  margin-bottom: 196px;
+}
+
+.triphouse-logo {
+  width: 205px;
+  height: 40px;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 344px;
+}
+
+.header-text {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 24px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.stays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  padding-top: 6px;
+}
+
+.stays-line {
+  height: 4px;
+  width: 50px;
+  margin-bottom: 0;
+  background-color: #f5bd41;
+}
+
+.night-img {
+  height: 30px;
+  width: 30px;
+}
+
+.account-img {
+  height: 40px;
+  width: 40px;
+}
+
+.main-block {
+  max-width: 1232px;
+  height: 488px;
+}
+
+.discover {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.discover-block {
+  width: 542px;
+  height: 118px;
+  margin-bottom: 100px;
+}
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  width: 664px;
+  margin-bottom: 24px;
+}
+
+.search-header-text {
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 24px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 1232px;
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+}
+
+.search-container-text {
+  font-size: 18px;
+  color: #383838;
+}
+.form {
+  height: 64px;
+  border: 0;
+  font-size: 18px;
+  color: #383838;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+.destination {
+  width: 466px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 260px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  width: 314px;
+}
+.button {
+  height: 64px;
+  width: 192px;
+  background: #3077c6;
+  border-radius: 8px;
+  border: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  max-width: 1440px;
+  height: 280px;
+}
+
 .container {
   background-color: #ffffff;
   max-width: 1440px;
