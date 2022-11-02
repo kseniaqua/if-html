@@ -20,7 +20,7 @@
         <div class="menu">
           <div class="stays">
             <h3 class="header-text">Stays</h3>
-            <div class="stays-line"></div>
+            <hr class="stays-line" />
           </div>
           <h3 class="header-text">Attractions</h3>
           <img class="night-img header-img" src=./images/night.png
@@ -33,28 +33,35 @@
         </div>
       </div>
       <div class="main-block">
-        <div class="discover-block">
-          <h2 class="discover">Discover stays</h2>
-          <h2 class="discover">to live, work or just relax</h2>
+        <div class="discover">
+          <h2 class="discover">
+            Discover stays <br />
+            to live, work or just relax
+          </h2>
         </div>
         <div class="search-header">
-          <p class="search-header-text">Your destination or hotel name</p>
-          <p class="search-header-text">Check-in — Check-out</p>
+          <label for="destination" class="search-header-text"
+            >Your destination or hotel name</label
+          >
+          <label for="dates" class="search-header-text"
+            >Check-in — Check-out</label
+          >
         </div>
-        <form class="search-container">
+        <form class="searching-form">
           <input
             id="destination"
-            class="form destination"
+            class="searching-form-input destination"
             type="text"
             placeholder="New York"
           />
           <input
-            class="form dates"
+            id="dates"
+            class="searching-form-input dates"
             type="text"
             placeholder="Tue 15 Sept — Sat 19 Sept"
           />
           <input
-            class="form people"
+            class="searching-form-input people"
             type="text"
             placeholder="2 Adults — 0 Children — 1 Room"
           />
