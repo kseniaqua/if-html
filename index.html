@@ -10,6 +10,69 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <div class="main">
+      <div class="header">
+        <img
+          class="triphouse-logo"
+          src="./images/logo_vector.png"
+          alt="TripHouse"
+        />
+        <div class="menu">
+          <div class="stays">
+            <h3 class="header-text">Stays</h3>
+            <hr class="stays-line" />
+          </div>
+          <h3 class="header-text">Attractions</h3>
+          <img class="night-img header-img" src=./images/night.png
+          alt="Night-mode">
+          <img
+            class="account-img header-img"
+            src="./images/account.png"
+            alt="Account"
+          />
+        </div>
+      </div>
+      <div class="main-block">
+        <div class="discover">
+          <h2 class="discover">
+            Discover stays <br />
+            to live, work or just relax
+          </h2>
+        </div>
+        <div class="search-header">
+          <label for="destination" class="search-header-text"
+            >Your destination or hotel name</label
+          >
+          <label for="dates" class="search-header-text"
+            >Check-in — Check-out</label
+          >
+        </div>
+        <form class="searching-form">
+          <input
+            id="destination"
+            class="searching-form-input destination"
+            type="text"
+            placeholder="New York"
+          />
+          <input
+            id="dates"
+            class="searching-form-input dates"
+            type="text"
+            placeholder="Tue 15 Sept — Sat 19 Sept"
+          />
+          <input
+            class="searching-form-input people"
+            type="text"
+            placeholder="2 Adults — 0 Children — 1 Room"
+          />
+          <button class="button">Search</button>
+        </form>
+        <div class="apps">
+          <img src="./images/google-play.png" alt="Google Play" />
+          <img src="./images/app-store.png" alt="App Store" />
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="offer">
         <h2 class="offer-title">What do we offer</h2>
