@@ -24,23 +24,23 @@
   margin-bottom: 196px;
 }
 
-.triphouse-logo {
+.header__logo {
   width: 205px;
   height: 40px;
 }
 
-.menu {
+.header__menu {
   display: flex;
   width: 344px;
 }
 
-.header-text {
+.header__text {
   color: #ffffff;
   font-size: 24px;
   margin-top: 6px;
 }
 
-.stays {
+.header__menu--stays {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@
   margin-right: 24px;
 }
 
-.stays-line {
+.header__menu--line {
   height: 4px;
   width: 50px;
   margin-bottom: 0;
@@ -57,14 +57,14 @@
   border: 0;
 }
 
-.night-img {
+.header__menu--night-img {
   height: 30px;
   width: 30px;
   margin-left: 48px;
   margin-top: 5px;
 }
 
-.account-img {
+.header__menu--account-img {
   height: 40px;
   width: 40px;
   margin-left: 24px;
@@ -76,7 +76,7 @@
   height: 488px;
 }
 
-.discover {
+.main-block__discover {
   width: 542px;
   height: 118px;
   margin-bottom: 100px;
@@ -85,16 +85,16 @@
   font-size: 50px;
 }
 
-.search-header {
+.searching-header {
   display: flex;
   justify-content: space-between;
   width: 664px;
   margin-bottom: 24px;
-}
-
-.search-header-text {
   color: #ffffff;
   font-size: 18px;
+}
+
+.search-header__text {
   margin-left: 24px;
 }
 
@@ -111,7 +111,7 @@
   border-radius: 8px;
 }
 
-.searching-form-input {
+.searching-form__input {
   height: 58px;
   border: 0;
   font-size: 18px;
@@ -122,13 +122,13 @@
   background-color: #ffffff;
 }
 
-.destination {
+.searching-form__input--destination {
   width: 466px;
   border: 0;
   border-radius: 8px;
 }
 
-.dates {
+.searching-form__input--dates {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,13 +138,13 @@
   border-radius: 8px;
 }
 
-.people {
+.searching-form__input--people {
   display: flex;
   align-items: center;
   width: 314px;
 }
 
-.button {
+.searching-form__button {
   height: 64px;
   width: 192px;
   background: #3077c6;
@@ -164,13 +164,23 @@
   height: 280px;
 }
 
-.container {
+.apps--google {
+  width: 135px;
+  height: 40px;
+}
+
+.apps--app-store {
+  width: 120px;
+  height: 40px;
+}
+
+.offer {
   background-color: #ffffff;
   max-width: 1440px;
   height: 570px;
 }
 
-.offer {
+.offer__title {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -178,7 +188,7 @@
   padding-top: 120px;
 }
 
-.offer-title {
+.offer__title--text {
   font-weight: 500;
   font-size: 40px;
   height: 47px;
@@ -186,14 +196,14 @@
   width: 306px;
 }
 
-.offer-line {
+.offer__line {
   height: 4px;
   width: 100px;
   margin: 18px auto 0;
   background-color: #f5bd41;
 }
 
-.advantages {
+.offer__row {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -201,7 +211,7 @@
   width: 1232px;
 }
 
-.advantages-card {
+.offer__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,28 +220,28 @@
   width: 296px;
 }
 
-.advantages-title {
+.offer__name {
   font-size: 24px;
   height: 28px;
   margin-bottom: 0;
 }
 
-.support-img {
+.offer__card--support-img {
   width: 75px;
   height: 92px;
 }
 
-.messenger-img {
+.offer__card--messenger-img {
   width: 84px;
   height: 84px;
 }
 
-.book-online-img {
+.offer__card--book-online-img {
   width: 100px;
-  height: 67px;
+  height: 68px;
 }
 
-.reviews-img {
+.offer__card--reviews-img {
   width: 92px;
   height: 84px;
 }
@@ -243,7 +253,7 @@
   padding: 120px 0 120px 104px;
 }
 
-.footer-block {
+.footer__block {
   display: flex;
   flex-direction: row;
   width: 1248px;
@@ -251,21 +261,21 @@
   margin-bottom: 64px;
 }
 
-.footer-card {
+.footer__card {
   width: 416px;
 }
 
-.footer-text {
+.footer__text {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 24px;
 }
 
-.footer-header {
+.footer__title {
   font-weight: 500;
 }
 
-.all-rights-reserved {
+.footer__all-rights-reserved {
   font-size: 14px;
   color: #ffffff;
 }
