@@ -14,6 +14,7 @@
   max-width: 1440px;
   background-repeat: no-repeat;
   padding: 51px 0 120px 104px;
+  margin: 0 auto;
 }
 
 .header {
@@ -178,6 +179,7 @@
   background-color: #ffffff;
   max-width: 1440px;
   height: 570px;
+  margin: 0 auto;
 }
 
 .offer__title {
@@ -251,6 +253,7 @@
   max-width: 1440px;
   height: 625px;
   padding: 120px 0 120px 104px;
+  margin: 0 auto;
 }
 
 .footer__block {
