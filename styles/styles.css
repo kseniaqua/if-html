@@ -14,6 +14,7 @@
   max-width: 1440px;
   background-repeat: no-repeat;
   padding: 51px 0 120px 104px;
+  margin: 0 auto;
 }
 
 .header {
@@ -24,23 +25,23 @@
   margin-bottom: 196px;
 }
 
-.triphouse-logo {
+.header__logo {
   width: 205px;
   height: 40px;
 }
 
-.menu {
+.header__menu {
   display: flex;
   width: 344px;
 }
 
-.header-text {
+.header__menu-text {
   color: #ffffff;
   font-size: 24px;
   margin-top: 6px;
 }
 
-.stays {
+.header__menu--stays {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +49,7 @@
   margin-right: 24px;
 }
 
-.stays-line {
+.header__menu--line {
   height: 4px;
   width: 50px;
   margin-bottom: 0;
@@ -57,14 +58,14 @@
   border: 0;
 }
 
-.night-img {
+.header__menu--night-img {
   height: 30px;
   width: 30px;
   margin-left: 48px;
   margin-top: 5px;
 }
 
-.account-img {
+.header__menu--account-img {
   height: 40px;
   width: 40px;
   margin-left: 24px;
@@ -76,7 +77,7 @@
   height: 488px;
 }
 
-.discover {
+.main-block__discover {
   width: 542px;
   height: 118px;
   margin-bottom: 100px;
@@ -85,20 +86,20 @@
   font-size: 50px;
 }
 
-.search-header {
+.main-block__searching-header {
   display: flex;
   justify-content: space-between;
   width: 664px;
   margin-bottom: 24px;
-}
-
-.search-header-text {
   color: #ffffff;
   font-size: 18px;
+}
+
+.main-block__searching-header--text {
   margin-left: 24px;
 }
 
-.searching-form {
+.main-block__searching-form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +112,7 @@
   border-radius: 8px;
 }
 
-.searching-form-input {
+.main-block__searching-form__input {
   height: 58px;
   border: 0;
   font-size: 18px;
@@ -122,13 +123,13 @@
   background-color: #ffffff;
 }
 
-.destination {
+.main-block__searching-form__input--destination {
   width: 466px;
   border: 0;
   border-radius: 8px;
 }
 
-.dates {
+.main-block__searching-form__input--dates {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,13 +139,13 @@
   border-radius: 8px;
 }
 
-.people {
+.main-block__searching-form__input--people {
   display: flex;
   align-items: center;
   width: 314px;
 }
 
-.button {
+.main-block__searching-form__button {
   height: 64px;
   width: 192px;
   background: #3077c6;
@@ -155,7 +156,7 @@
   color: #ffffff;
 }
 
-.apps {
+.main-block__apps {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,13 +165,24 @@
   height: 280px;
 }
 
-.container {
-  background-color: #ffffff;
-  max-width: 1440px;
-  height: 570px;
+.main-block__apps--google {
+  width: 135px;
+  height: 40px;
+}
+
+.main-block__apps--app-store {
+  width: 120px;
+  height: 40px;
 }
 
 .offer {
+  background-color: #ffffff;
+  max-width: 1440px;
+  height: 570px;
+  margin: 0 auto;
+}
+
+.offer__title {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -178,7 +190,7 @@
   padding-top: 120px;
 }
 
-.offer-title {
+.offer__title--text {
   font-weight: 500;
   font-size: 40px;
   height: 47px;
@@ -186,14 +198,14 @@
   width: 306px;
 }
 
-.offer-line {
+.offer__line {
   height: 4px;
   width: 100px;
   margin: 18px auto 0;
   background-color: #f5bd41;
 }
 
-.advantages {
+.offer__row {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -201,7 +213,7 @@
   width: 1232px;
 }
 
-.advantages-card {
+.offer__row__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,28 +222,28 @@
   width: 296px;
 }
 
-.advantages-title {
+.offer__row__card--name {
   font-size: 24px;
   height: 28px;
   margin-bottom: 0;
 }
 
-.support-img {
+.offer__row__card--support-img {
   width: 75px;
   height: 92px;
 }
 
-.messenger-img {
+.offer__row__card--messenger-img {
   width: 84px;
   height: 84px;
 }
 
-.book-online-img {
+.offer__card--book-online-img {
   width: 100px;
-  height: 67px;
+  height: 68px;
 }
 
-.reviews-img {
+.offer__row__card--reviews-img {
   width: 92px;
   height: 84px;
 }
@@ -241,9 +253,10 @@
   max-width: 1440px;
   height: 625px;
   padding: 120px 0 120px 104px;
+  margin: 0 auto;
 }
 
-.footer-block {
+.footer__block {
   display: flex;
   flex-direction: row;
   width: 1248px;
@@ -251,21 +264,21 @@
   margin-bottom: 64px;
 }
 
-.footer-card {
+.footer__block__card {
   width: 416px;
 }
 
-.footer-text {
+.footer__block__card--text {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 24px;
 }
 
-.footer-header {
+.footer__block__card--title {
   font-weight: 500;
 }
 
-.all-rights-reserved {
+.footer__all-rights-reserved {
   font-size: 14px;
   color: #ffffff;
 }
