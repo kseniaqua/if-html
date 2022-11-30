@@ -190,12 +190,15 @@
         />
       </symbol>
       <symbol id="search-destination" viewBox="0 0 16 16">
-        <path fill="#BFBFBF" d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"/>
+        <path
+          fill="#BFBFBF"
+          d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"
+        />
       </symbol>
     </svg>
-    <div class="wrapper__main">
+    <div class="wrapper main__bg">
       <div class="main container">
-        <div class="header col-md-12 col-sm-6">
+        <div class="header col-md-10 col-sm-6">
           <div class="header__logo--block">
             <svg class="header__logo">
               <use href="#logo" />
@@ -223,7 +226,7 @@
           </div>
         </div>
         <div class="col-sm-6 main-block">
-          <div class="main-block__discover">
+          <div class="col-md-10 main-block__discover">
             <h2 class="main-block__discover">
               Discover stays <br />
               to live, work or just relax
@@ -233,83 +236,92 @@
             <div class="main-block__searching-header">
               <label
                 for="destination"
-                class="main-block__searching-header--text"
+                class="main-block__searching-header--text main-block__searching-header--destination"
                 >Your destination or hotel name</label
               >
-              <label for="dates" class="main-block__search-header--text"
+              <label
+                for="dates"
+                class="main-block__search-header--text main-block__searching-header--dates"
                 >Check-in — Check-out</label
               >
             </div>
-            <div class="main-block__searching-form">
-              <div class="col-md-12 main-block__searching-form__input-block">
-                <input
-                        id="destination"
-                        class="main-block__searching-form__input main-block__searching-form__input--destination"
-                        type="text"
-                        placeholder="New York"
-                />
-              </div>
-              <div class="col-md-12 main-block__searching-form__input-block">
-                <input
-                        id="dates"
-                        class="main-block__searching-form__input main-block__searching-form__input--dates"
-                        type="text"
-                        placeholder="Tue 15 Sept — Sat 19 Sept"
-                />
-              </div>
-              <div class="col-md-12  main-block__searching-form__input-block">
-                <input
-                        class="main-block__searching-form__input main-block__searching-form__input--people"
-                        type="text"
-                        placeholder="2 Adults — 0 Children — 1 Room"
-                />
-              </div>
+            <div class="col-md-10 main-block__searching-form">
+              <input
+                id="destination"
+                class="col-md-12 main-block__searching-form__input main-block__searching-form__input--destination"
+                type="text"
+                placeholder="New York"
+              />
+              <input
+                id="dates"
+                class="col-md-12 main-block__searching-form__input main-block__searching-form__input--dates"
+                type="text"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+              />
+              <input
+                class="col-md-12 main-block__searching-form__input main-block__searching-form__input--people"
+                type="text"
+                placeholder="2 Adults — 0 Children — 1 Room"
+              />
               <button class="main-block__searching-form__button">Search</button>
             </div>
           </div>
           <div class="col-sm-6 main-block__searching-block--mobile">
-            <div main-block__searching-block__mobile--destination>
+            <div class="main-block__searching-block__mobile--destination">
+              <span class="search-icon-mobile">
+                <i class="fa fa-magnifying-glass"></i>
+              </span>
               <input
-
-
-                     class="input--mobile main-block__searching-block__mobile--destination"
-                      id="destination-mobile"
-                      type="text"
-                      placeholder="Your destination or hotel name"
+                class="input--mobile main-block__searching-block__mobile__destination--input"
+                id="destination-mobile"
+                type="text"
+                placeholder="Your destination or hotel name"
               />
             </div>
-            <div main-block__searching-block__mobile--dates>
-              <div main-block__searching-block__mobile--check>
-                <label class="label-mobile" for="check-in">Check-in </label>
-                <input
-                        class="input--mobile"
-                        id="check-in"
-                        type="text"
-                        placeholder="Tue 15 Sept 2020"
-                />
-              </div>
-
-<!--              &#128269;-->
-              <div main-block__searching-block__mobile--check>
-                <label class="label-mobile" for="check-out">Check-out date</label>
-                <input
-                        class="input--mobile"
-                        id="check-out"
-                        type="text"
-                        placeholder="Sat 19 Sept 2020"
-                />
-              </div>
+            <div class="main-block__searching-block__mobile--dates">
+              <label class="label-mobile" for="check-in-mobile">Check-in</label>
+              <input
+                class="input--mobile main-block__searching-block__mobile__dates--input"
+                id="check-in-mobile"
+                type="text"
+                placeholder="Tue 15 Sept 2020"
+              />
+              <label class="label-mobile" for="check-out-mobile"
+                >Check-out</label
+              >
+              <input
+                class="input--mobile main-block__searching-block__mobile__dates--input"
+                id="check-out-mobile"
+                type="text"
+                placeholder="Sat 19 Sept 2020"
+              />
             </div>
-            <div main-block__searching-block__mobile--people>
+            <div class="main-block__searching-block__mobile--people">
               <label class="label-mobile" for="adults-mobile">Adults</label>
-              <input class="input--mobile" id="adults-mobile" type="text" placeholder="2"/>
+              <input
+                class="input--mobile main-block__searching-block__mobile__people--input"
+                id="adults-mobile"
+                type="text"
+                placeholder="2"
+              />
               <label class="label-mobile" for="children-mobile">Children</label>
-              <input class="input--mobile" id="children-mobile" type="text" placeholder="0" />
+              <input
+                class="input--mobile main-block__searching-block__mobile__people--input"
+                id="children-mobile"
+                type="text"
+                placeholder="0"
+              />
               <label class="label-mobile" for="rooms-mobile">Rooms</label>
-              <input class="input--mobile" id="rooms-mobile" type="text" placeholder="1"/>
+              <input
+                class="input--mobile main-block__searching-block__mobile__people--input"
+                id="rooms-mobile"
+                type="text"
+                placeholder="1"
+              />
             </div>
+            <button class="main-block__searching-form__button">Search</button>
           </div>
-
+          <i class="fa-solid fa-magnifying-glass"></i>
           <div class="main-block__apps">
             <svg class="main-block__apps--google">
               <use href="#google-store" />
@@ -321,7 +333,7 @@
         </div>
       </div>
     </div>
-    <div class="offer__wrapper">
+    <div class="wrapper offer__bg">
       <div class="offer container">
         <div class="offer__title">
           <h2 class="offer__title--text">What do we offer</h2>
@@ -355,7 +367,7 @@
         </div>
       </div>
     </div>
-    <div class="footer__wrapper">
+    <div class="wrapper footer__bg">
       <div class="footer container">
         <div class="col-sm-6 footer__logo">
           <svg class="footer__logo--img">
@@ -376,7 +388,9 @@
             <p class="footer__block__card--text footer__block__options">
               Privacy
             </p>
-            <p class="footer__block__card--text footer__block__options">Terms</p>
+            <p class="footer__block__card--text footer__block__options">
+              Terms
+            </p>
           </div>
           <div class="col-lg-4 footer__block__card">
             <h3 class="footer__block__card--text footer__block__card--title">
@@ -385,11 +399,15 @@
             <p class="footer__block__card--text footer__block__options">
               Guest houses
             </p>
-            <p class="footer__block__card--text footer__block__options">Hotels</p>
+            <p class="footer__block__card--text footer__block__options">
+              Hotels
+            </p>
             <p class="footer__block__card--text footer__block__options">
               Apartments
             </p>
-            <p class="footer__block__card--text footer__block__options">Villas</p>
+            <p class="footer__block__card--text footer__block__options">
+              Villas
+            </p>
             <p class="footer__block__card--text footer__block__options">
               Holiday homes
             </p>
@@ -414,6 +432,6 @@
         </div>
       </div>
     </div>
-
+    <i class="fa-solid fa-magnifying-glass"></i>
   </body>
 </html>
