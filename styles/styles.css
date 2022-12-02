@@ -5,11 +5,16 @@
   --primary-light-text: #ffffff;
   --primary-dark-text: #383838;
   --col-width: calc(100% / 12);
+  --col-width-sm: calc(100% /6);
   --main__padding-top: 51px;
   --main__padding-bottom: 120px;
   --offer__padding-top: 120px;
   --offer__padding-bottom: 114px;
-  --offer__row--space-top: 84px;
+  --offer__row--margin-top: 105px;
+  --homes__padding-top: 120px;
+  --homes__padding-bottom: 120px;
+  --homes__row__padding-top: 104px;
+  --homes__row__width: 1232px;
   --footer__padding-top: 120px;
   --footer__padding-bottom: 120px;
 }
@@ -26,6 +31,13 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.17;
+}
+
+.svg {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .col-lg-1 {
@@ -113,7 +125,7 @@
   display: flex;
 }
 
-.header__menu-text {
+.header__menu__text {
   color: var(--primary-light-text);
   font-size: 24px;
   margin-top: 6px;
@@ -121,19 +133,36 @@
 
 .header__menu--stays {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60px;
+  max-width: 60px;
   margin-right: 24px;
+  position: relative;
 }
 
-.header__menu--line {
-  height: 4px;
+.header__menu--attractions {
+  max-width: 118px;
+  position: relative;
+}
+
+.header__menu__text--stays:hover:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
   width: 50px;
-  margin-bottom: 0;
-  margin-top: 8px;
+  height: 4px;
   background-color: #f5bd41;
   border: 0;
+  transform: translate(-53px, 35px)
+}
+
+.header__menu__text--attractions:hover:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+  transform: translate(-84px, 35px)
 }
 
 .header__menu__images {
@@ -292,35 +321,35 @@
 }
 
 .offer__title {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /*height: 189px;*/
+  position: relative;
+  max-width: 306px;
+  margin: 0 auto;
 }
 
-.offer__title--text {
+.h2 {
   font-weight: 500;
   font-size: 40px;
   color: var(--primary-dark-text);
-  margin: 0 auto;
-  /*width: 306px;*/
+  text-align: center;
 }
 
-.offer__line {
+.offer__title--text:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
   height: 4px;
   width: 100px;
-  margin: 18px auto 0;
   background-color: #f5bd41;
+  transform: translate(-203px, 68px);
 }
 
 .offer__row {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
   /*height: 254px;*/
   max-width: 1264px;
-  margin-top: var(--offer__row--space-top);
+  margin: var(--offer__row--margin-top) auto 0;
 }
 
 .offer__row__card {
@@ -368,6 +397,71 @@
   width: 92px;
   /*height: 84px;*/
   aspect-ratio: 11/10;
+}
+
+.homes__bg {
+  background-color: #eaf0f9;
+}
+
+.homes {
+  padding-top: var(--homes__padding-top);
+  padding-bottom: var(--homes__padding-bottom);
+}
+
+.homes__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: var(--homes__row__width);
+  width: 100%;
+  margin: var(--offer__row--margin-top) auto 0;
+  position: relative;
+  /*padding-left: -16px;*/
+}
+
+.homes__row__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: space-between;
+  width: 24%;
+  font-size: 24px;
+}
+
+.homes__row__card__img {
+  max-width: 296px;
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.homes__row__card__hotel {
+  color: #3077C6;
+}
+
+.homes__row__card__place {
+  color: #bfbfbf;
+}
+
+.homes__row__slider-arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f3f4;
+  top: 30%;
+  left: 96%;
+  z-index: 0.1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homes__row__slider-arrow--shape {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #383838;
+  border-left: 0;
+  border-top: 0;
+  border-radius: 2px;
+  transform: translate(13px, 14px) rotate(-45deg) skew(-8deg, -8deg);
 }
 
 .footer__bg {
@@ -425,7 +519,7 @@
     --main__padding-top: 32px;
     --offer__padding-top: 60px;
     --offer__padding-bottom: 80px;
-    --offer__row--space-top: 60px;
+    --offer__row--margin-top: 60px;
     --footer__padding-top: 40px;
     --footer__padding-bottom: 40px;
     --main__padding-bottom: 60px;
@@ -588,6 +682,25 @@
     font-size: 20px;
   }
 
+  .homes__row__card {
+    font-size: 18px;
+    margin-bottom: 24px;
+    width: 31%;
+    row-gap: 16px;
+  }
+
+  .homes__row__card__img {
+    max-width: 200px;
+  }
+
+  .homes__row__card--hostel {
+    display: none;
+  }
+
+  .homes__row__slider-arrow {
+    top: 25%;
+  }
+
   .footer__block__card {
     padding-left: 0;
     align-items: center;
@@ -615,25 +728,27 @@
     --main__padding-bottom: 40px;
     --offer__padding-top: 24px;
     --offer__padding-bottom: 40px;
-    --offer__row--space-top: 32px;
+    --offer__row--margin-top: 32px;
+    --homes__padding-top: 40px;
+    --homes__padding-bottom: 40px;
     --footer__padding-top: 40px;
     --footer__padding-bottom: 40px;
   }
 
   .col-sm-1 {
-    width: var(--col-width);
+    width: var(--col-width-sm);
   }
   .col-sm-2 {
-    width: calc(var(--col-width) * 2);
+    width: calc(var(--col-width-sm) * 2);
   }
   .col-sm-3 {
-    width: calc(var(--col-width) * 3);
+    width: calc(var(--col-width-sm) * 3);
   }
   .col-sm-4 {
-    width: calc(var(--col-width) * 4);
+    width: calc(var(--col-width-sm) * 4);
   }
   .col-sm-5 {
-    width: calc(var(--col-width) * 5);
+    width: calc(var(--col-width-sm) * 5);
   }
   .col-sm-6 {
     width: 100%;
@@ -692,10 +807,20 @@
     gap: 8px;
     margin: 0 auto 32px;
     box-sizing: border-box;
+    position: relative;
+  }
+
+  .label-mobile {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 12px;
+    color: var(--primary-dark-text);
+    margin-left: 8px;
+    margin-top: 6px;
   }
 
   .input--mobile {
-    /*display: flex;*/
     height: 48px;
     font-size: 15px;
     font-weight: 500;
@@ -709,8 +834,8 @@
     display: block;
     background-position: 16px;
     width: 100%;
-    padding-top: 15px;
-    position: relative;
+    padding-top: 0;
+    padding-left: 36px;
   }
 
   .main-block__searching-block__mobile__destination--input:before {
@@ -735,14 +860,21 @@
   }
 
   .main-block__searching-block__mobile--dates {
-    display: inline-block;
+    display: flex;
     max-width: 312px;
     width: 100%;
-    row-gap: 8px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .main-block__searching-block__mobile__dates--input-block {
+    position: relative;
+    flex-wrap: nowrap;
+    /*width: 49%;*/
   }
 
   .main-block__searching-block__mobile__dates--input {
-    width: 49%;
+    width: 100%;
   }
 
   .main-block__searching-block__mobile--people {
@@ -756,36 +888,29 @@
   }
 
   .main-block__searching-block__mobile__people--input {
-    width: 32%;
+    width: 100%;
+    border-right: 1px solid #bfbfbf;
   }
 
-
-  .label-mobile {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    font-size: 12px;
-    color: var(--primary-dark-text);
-    margin-left: 8px;
-    margin-top: 6px;
+  .main-block__searching-block__mobile__people--input-block {
+    position: relative;
+    width: 33%;
   }
 
   .main-block__searching-form__button {
     height: 48px;
     width: 100%;
-    /*background: #3077c6;*/
     border-radius: 4px;
     border: 0;
     font-size: 19px;
     font-weight: 500;
-    /*color: var(--primary-light-text);*/
   }
 
-  .offer__title--text {
+  .h2 {
     font-size: 28px;
   }
 
-  .offer__line {
+  .offer__title--text:after {
     display: none;
   }
 
@@ -821,6 +946,36 @@
     font-size: 15px;
   }
 
+  .homes__row__card {
+    width: 48%;
+    row-gap: 4px;
+    font-size: 12px;
+  }
+
+  .homes__row__card__img {
+    max-width: 156px;
+    margin-bottom: 4px;
+  }
+
+  .homes__row__card--villa {
+    display: none;
+  }
+
+  .homes__row__slider-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .homes__row__slider-arrow--shape {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #383838;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 2px;
+    transform: translate(10px, 10px) rotate(-45deg) skew(-8deg, -8deg);
+  }
+
   .footer__logo {
     display: flex;
     justify-content: center;
@@ -850,10 +1005,6 @@
     font-size: 15px;
     /*white-space: nowrap;*/
   }
-
-  /*.footer__block__options {*/
-  /*  display: none;*/
-  /*}*/
 
   .footer__all-rights-reserved {
     font-size: 12px;
