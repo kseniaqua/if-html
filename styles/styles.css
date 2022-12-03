@@ -158,11 +158,11 @@
   content: '';
   position: absolute;
   display: inline-block;
-  width: 50px;
+  width: 108px;
   height: 4px;
   background-color: #f5bd41;
   border: 0;
-  transform: translate(-84px, 35px)
+  transform: translate(-113px, 35px)
 }
 
 .header__menu__images {
@@ -326,7 +326,7 @@
   margin: 0 auto;
 }
 
-.h2 {
+.title--text {
   font-weight: 500;
   font-size: 40px;
   color: var(--primary-dark-text);
@@ -906,7 +906,7 @@
     font-weight: 500;
   }
 
-  .h2 {
+  .title--text {
     font-size: 28px;
   }
 
