@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      style="position: absolute; visibility: hidden; width: 0; height: 0"
-    >
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
       <symbol id="logo" viewBox="0 0 205 40">
         <path
           fill="#3077C6"
@@ -195,6 +192,9 @@
           d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"
         />
       </symbol>
+      <symbol id="slider-arrow" viewBox="0 0 9 21">
+        <path stroke="#383838" stroke-width="2" d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"/>
+      </symbol>
     </svg>
     <div class="wrapper main__bg">
       <div class="main container">
@@ -207,10 +207,12 @@
           <div class="header__menu">
             <div class="header__menu__options">
               <div class="header__menu--stays">
-                <h3 class="header__menu-text">Stays</h3>
-                <hr class="header__menu--line" />
+                <h3 class="header__menu__text header__menu__text--stays">Stays</h3>
+<!--                <hr class="header__menu&#45;&#45;line" />-->
               </div>
-              <h3 class="header__menu-text">Attractions</h3>
+              <div class="header__menu--attractions">
+                <h3 class="header__menu__text header__menu__text--attractions">Attractions</h3>
+              </div>
             </div>
             <div class="header__menu__images">
               <svg class="header__menu--night-img">
@@ -279,45 +281,55 @@
               />
             </div>
             <div class="main-block__searching-block__mobile--dates">
-              <label class="label-mobile" for="check-in-mobile">Check-in</label>
-              <input
-                class="input--mobile main-block__searching-block__mobile__dates--input"
-                id="check-in-mobile"
-                type="text"
-                placeholder="Tue 15 Sept 2020"
-              />
-              <label class="label-mobile" for="check-out-mobile"
+              <div class="main-block__searching-block__mobile__dates--input-block">
+                <label class="label-mobile" for="check-in-mobile">Check-in</label>
+                <input
+                        class="input--mobile main-block__searching-block__mobile__dates--input"
+                        id="check-in-mobile"
+                        type="text"
+                        placeholder="Tue 15 Sept 2020"
+                />
+              </div>
+              <div class="main-block__searching-block__mobile__dates--input-block">
+                <label class="label-mobile" for="check-out-mobile"
                 >Check-out</label
-              >
-              <input
-                class="input--mobile main-block__searching-block__mobile__dates--input"
-                id="check-out-mobile"
-                type="text"
-                placeholder="Sat 19 Sept 2020"
-              />
+                >
+                <input
+                        class="input--mobile main-block__searching-block__mobile__dates--input"
+                        id="check-out-mobile"
+                        type="text"
+                        placeholder="Sat 19 Sept 2020"
+                />
+              </div>
             </div>
             <div class="main-block__searching-block__mobile--people">
-              <label class="label-mobile" for="adults-mobile">Adults</label>
-              <input
-                class="input--mobile main-block__searching-block__mobile__people--input"
-                id="adults-mobile"
-                type="text"
-                placeholder="2"
-              />
-              <label class="label-mobile" for="children-mobile">Children</label>
-              <input
-                class="input--mobile main-block__searching-block__mobile__people--input"
-                id="children-mobile"
-                type="text"
-                placeholder="0"
-              />
-              <label class="label-mobile" for="rooms-mobile">Rooms</label>
-              <input
-                class="input--mobile main-block__searching-block__mobile__people--input"
-                id="rooms-mobile"
-                type="text"
-                placeholder="1"
-              />
+              <div class="main-block__searching-block__mobile__people--input-block">
+                <label class="label-mobile" for="adults-mobile">Adults</label>
+                <input
+                        class="input--mobile main-block__searching-block__mobile__people--input"
+                        id="adults-mobile"
+                        type="text"
+                        placeholder="2"
+                />
+              </div>
+              <div class="main-block__searching-block__mobile__people--input-block">
+                <label class="label-mobile" for="children-mobile">Children</label>
+                <input
+                        class="input--mobile main-block__searching-block__mobile__people--input"
+                        id="children-mobile"
+                        type="text"
+                        placeholder="0"
+                />
+              </div>
+              <div class="main-block__searching-block__mobile__people--input-block">
+                <label class="label-mobile" for="rooms-mobile">Rooms</label>
+                <input
+                        class="input--mobile main-block__searching-block__mobile__people--input"
+                        id="rooms-mobile"
+                        type="text"
+                        placeholder="1"
+                />
+              </div>
             </div>
             <button class="main-block__searching-form__button">Search</button>
           </div>
@@ -336,33 +348,62 @@
     <div class="wrapper offer__bg">
       <div class="offer container">
         <div class="offer__title">
-          <h2 class="offer__title--text">What do we offer</h2>
-          <div class="offer__line"></div>
+          <h2 class="title--text offer__title--text">What do we offer</h2>
         </div>
         <div class="offer__row">
-          <div class="offer__row__card col-lg-3 col-sm-6 col-md-6">
+          <div class="offer__row__card col-lg-3 col-md-6 col-sm-6">
             <svg class="offer__row__card__img offer__row__card__img--support">
               <use href="#support" />
             </svg>
             <p class="offer__row__card--name">Support 24/7</p>
           </div>
-          <div class="offer__row__card col-lg-3 col-sm-6 col-md-6">
+          <div class="offer__row__card col-lg-3 col-md-6 col-sm-6">
             <svg class="offer__row__card__img offer__row__card__img--messenger">
               <use href="#messenger" />
             </svg>
             <p class="offer__row__card--name">Communicate directly</p>
           </div>
-          <div class="offer__row__card col-lg-3 col-sm-6 col-md-6">
+          <div class="offer__row__card col-lg-3 col-md-6 col-sm-6">
             <svg class="offer__row__card__img offer__card__img--book-online">
               <use href="#book-online" />
             </svg>
             <p class="offer__row__card--name">Book online</p>
           </div>
-          <div class="offer__row__card col-lg-3 col-sm-6 col-md-6">
+          <div class="offer__row__card col-lg-3 col-md-6 col-sm-6">
             <svg class="offer__row__card__img offer__row__card__img--reviews">
               <use href="#reviews" />
             </svg>
             <p class="offer__row__card--name">Real guest reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper homes__bg">
+      <div class="homes container">
+        <h2 class="title--text">Homes guests loves</h2>
+        <div class="col-lg-12 homes__row">
+          <div class="homes__row__card homes__row__card--hotel">
+            <img class="homes__row__card__img" src="images/homes-hotel-leopold.png" alt="Hotel Leopold">
+            <p class="homes__row__card__hotel">Hotel Leopold</p>
+            <p class="homes__row__card__place">Saint Petersburg, Russia</p>
+          </div>
+          <div class="homes__row__card homes__row__card--apartment">
+            <img class="homes__row__card__img" src="images/homes-apartment-sunshine.png" alt="Apartment Sunshine">
+            <p class="homes__row__card__hotel">Apartment Sunshine</p>
+            <p class="homes__row__card__place">Santa Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="homes__row__card  homes__row__card--villa">
+            <img class="homes__row__card__img" src="images/homes-villa-kunerad.png" alt="Villa Kunerad">
+            <p class="homes__row__card__hotel">Villa Kunerad</p>
+            <p class="homes__row__card__place">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="homes__row__card  homes__row__card--hostel">
+            <img class="homes__row__card__img" src="images/homes-hostel-friendship.png" alt="Hostel Friendship">
+            <p class="homes__row__card__hotel">Hostel Friendship</p>
+            <p class="homes__row__card__place">Berlin, Germany</p>
+          </div>
+          <div class="homes__row__slider-arrow">
+            <div class="homes__row__slider-arrow--shape"></div>
           </div>
         </div>
       </div>
@@ -432,6 +473,7 @@
         </div>
       </div>
     </div>
-    <i class="fa-solid fa-magnifying-glass"></i>
+
+
   </body>
 </html>
