@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kseniaqua/if-html#readme",
   "devDependencies": {
     "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "flag-icon-css": "^4.1.7"
   }
 }
